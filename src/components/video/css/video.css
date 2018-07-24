@@ -1,0 +1,25 @@
+.plyr__controls{
+  background:rgba(14, 73 ,88 ,0.9) !important;
+  padding: 0px !important;
+  height: 60px !important;
+}
+
+.plyr__controls button{
+  background:rgba(28,175,208,0.2) !important;
+  margin: 0px !important;
+  height: 60px !important;
+  width: 60px !important;
+  border-radius: 0px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.plyr__menu{
+  margin: 0px !important;
+}
+
+.plyr{
+  width: 815px;
+  height: auto;
+}

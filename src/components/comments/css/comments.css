@@ -1,0 +1,12 @@
+
+.comments-test{
+  height: 200px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transform: scaleX(-1);
+}
+
+.comments-test-scroll{
+  height: 200px;
+  transform: scaleX(-1);
+}
