@@ -47,30 +47,36 @@ class Comments extends Component {
                 <form
                   data-index={index}
                   onSubmit={this.addReply}
-                  className={this.props.url !== '' ? 'modal-element' : 'display-none'}>
-                  <div className='modal-element flex-space-between'>
-                    <button type='submit' className='btn btn-white float-left'>
-                      <i className='fa fa-comment' />Comment
-              </button>
-                    <button type='button' className='btn btn-white float-left'>
-                      <i className='fa fa-heart' />Like
-              </button>
-                    <button type='button' className='btn btn-white float-left'>
-                      <i className='fa fa-share-alt' />Share
-              </button>
-                    <button type='button' className='btn btn-white float-right'>
-                      <i className='fa fa-flag' />Report
-              </button>
+                  className={this.props.url !== '' ? '' : 'display-none'}>
+                  <div className='modal-element-sm'>
+                  <div className='flex-space-between'>
+                    <div>
+                      <button type='submit' className='btn btn-white float-left'>
+                        <i className='fa fa-comment' />Comment
+                      </button>
+                      <button type='button' className='btn btn-white float-left'>
+                        <i className='fa fa-heart' />Like
+                      </button>
+                      <button type='button' className='btn btn-white float-left'>
+                        <i className='fa fa-share-alt' />Share
+                        </button>
+                    </div>
+                    <div>
+                      <button type='button' className='btn btn-white float-right'>
+                        <i className='fa fa-flag' />Report
+                      </button>
+                    </div>
+                  </div>
                   </div>
                   <div className='space' />
-                  <hr className='modal-element' />
+                  <hr className='modal-element-sm' />
                   <div className='space' />
-                  <div className='modal-element flex-space-between'>
+                  <div className='modal-element-sm flex-start'>
                     <button
                       type='submit'
                       className='btn btn-white'>
                       Comment <span className='important'> (implemented)</span>
-              </button>
+                    </button>
                     <button
                       type='button'
                       className='btn btn-white'>
@@ -86,18 +92,18 @@ class Comments extends Component {
                   <div className='space' />
                   <input
                     placeholder='reply...'
-                    className='modal-element'
+                    className='modal-element-sm'
                     type='text'
                     name='reply' />
                   <div className='space' />
                 </form>
                 {comment.replies.map((reply, i) => {
                   return (
-                    <div className='modal-element display-block' key={i}>
+                    <div className='modal-element-sm display-block' key={i}>
                       <div className='space' />
                       <div>{reply}</div>
                       <div className='space' />
-                      <hr className='modal-element' />
+                      <hr className='modal-element-sm' />
                     </div>)
                 })}
               </div>
