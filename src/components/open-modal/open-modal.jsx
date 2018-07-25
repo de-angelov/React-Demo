@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { openModal } from  '../../actions/modalActions';
+import './css/open-modal.css'
 
 class OpenModal extends Component {
 
